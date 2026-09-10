@@ -67,14 +67,8 @@ export default function HomePage() {
             <p className="support">Browse our shop by category — order online with secure checkout, or request a bulk quote.</p>
           </div>
           <div className="cat-grid">
-            <Link className="cat-cell" href="/shop"><span className="name">Grocery &amp; Gourmet Food</span><span className="sub">Shelf-stable &amp; specialty items</span></Link>
-            <Link className="cat-cell" href="/shop"><span className="name">Health &amp; Household</span><span className="sub">Everyday essentials</span></Link>
-            <Link className="cat-cell" href="/shop"><span className="name">Beauty &amp; Personal Care</span><span className="sub">Trusted daily-use brands</span></Link>
-            <Link className="cat-cell" href="/shop"><span className="name">Home &amp; Kitchen</span><span className="sub">Practical, in-demand goods</span></Link>
-            <Link className="cat-cell" href="/shop"><span className="name">Electronics</span><span className="sub">Accessories &amp; consumer tech</span></Link>
-            <Link className="cat-cell" href="/shop"><span className="name">Patio &amp; Garden</span><span className="sub">Outdoor living essentials</span></Link>
-            <Link className="cat-cell" href="/shop"><span className="name">Sports &amp; Outdoors</span><span className="sub">Gear for active lifestyles</span></Link>
-            <Link className="cat-cell" href="/shop"><span className="name">General Merchandise</span><span className="sub">Custom sourcing on request</span></Link>
+            <Link className="cat-cell" href="/shop"><span className="name">Electronics</span><span className="sub">Ubiquiti networking &amp; accessories</span></Link>
+            <Link className="cat-cell" href="/shop"><span className="name">General Merchandise</span><span className="sub">Automotive &amp; custom sourcing</span></Link>
           </div>
         </div>
       </section>
@@ -84,7 +78,7 @@ export default function HomePage() {
           <div className="stats-grid">
             <div className="stat"><div className="big">100<span className="gold-suffix">%</span></div><div className="cap">Orders Quality-Checked</div></div>
             <div className="stat"><div className="big">24<span className="gold-suffix">/7</span></div><div className="cap">Customer Support</div></div>
-            <div className="stat"><div className="big">8<span className="gold-suffix">+</span></div><div className="cap">Product Categories</div></div>
+            <div className="stat"><div className="big">2<span className="gold-suffix"></span></div><div className="cap">Product Categories</div></div>
             <div className="stat"><div className="big">FL<span className="gold-suffix">·US</span></div><div className="cap">Based &amp; Shipping Nationwide</div></div>
           </div>
         </div>
