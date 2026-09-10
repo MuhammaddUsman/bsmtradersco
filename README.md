@@ -81,6 +81,28 @@ Get your public key from **https://snipcart.com** (free account) and paste it in
 ### 3. Editing products
 Open `data/products.js` — add, remove, or edit items in the `products` array. Each needs a unique `id`, a `category` (must match a key in `categories`), `name`, `price`, `desc`, and an optional `tags` array for sub-filtering.
 
+### 4. Adding real product photos
+Every product now supports an optional `image` field. Two ways to add a photo:
+
+**Option A — Upload directly on GitHub (easiest, no coding tools needed):**
+1. In your GitHub repo, open the `public/products` folder
+2. Click **Add file → Upload files**, drag your photo in (e.g. `nanohd.jpg`), and commit
+3. Open `data/products.js`, find that product's line, and set:
+   ```js
+   image: "/products/nanohd.jpg",
+   ```
+4. Commit — your host (Vercel/Netlify) will redeploy automatically and the real photo replaces the placeholder icon tile
+
+**Option B — Add them locally, then push:**
+1. Drop image files into the `public/products/` folder on your computer
+2. Set the matching `image: "/products/filename.jpg"` line in `data/products.js`
+3. `git add . && git commit -m "Add product photos" && git push`
+
+**Notes:**
+- Recommended: square photos (e.g. 800×800px), JPG or PNG, ideally under ~300KB each so pages stay fast
+- Leave `image: ""` (or delete the line) on any product to keep the current icon/color placeholder — you don't have to add photos for everything at once
+- This works the same way for the Wishlist page and the Quick View popup — no extra steps needed there
+
 ### 4. Editing blog posts
 Open `data/posts.js` — add a new object to publish a post. `slug` becomes the URL (`/blog/your-slug`), `body` is an array of paragraphs.
 
