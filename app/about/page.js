@@ -70,7 +70,7 @@ export default function AboutPage() {
           <div className="stats-grid">
             <div className="stat"><div className="big">100<span className="gold-suffix">%</span></div><div className="cap">Orders Quality-Checked</div></div>
             <div className="stat"><div className="big">24<span className="gold-suffix">/7</span></div><div className="cap">Customer Support</div></div>
-            <div className="stat"><div className="big">8<span className="gold-suffix">+</span></div><div className="cap">Product Categories</div></div>
+            <div className="stat"><div className="big">2<span className="gold-suffix"></span></div><div className="cap">Product Categories</div></div>
             <div className="stat"><div className="big">FL<span className="gold-suffix">·US</span></div><div className="cap">Based &amp; Shipping Nationwide</div></div>
           </div>
         </div>
