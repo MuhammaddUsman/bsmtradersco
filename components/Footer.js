@@ -30,10 +30,8 @@ export default function Footer() {
           <div>
             <h4>Categories</h4>
             <ul>
-              <li><Link href="/shop">Grocery &amp; Gourmet</Link></li>
-              <li><Link href="/shop">Health &amp; Household</Link></li>
-              <li><Link href="/shop">Beauty &amp; Personal Care</Link></li>
-              <li><Link href="/shop">Home &amp; Kitchen</Link></li>
+              <li><Link href="/shop">Electronics</Link></li>
+              <li><Link href="/shop">General Merchandise</Link></li>
             </ul>
           </div>
           <div>
