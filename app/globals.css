@@ -155,7 +155,7 @@ section{padding:88px 0;}
 
 /* ---------- Categories showcase ---------- */
 .categories{background:#fff;}
-.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);}
 @media (max-width:860px){.cat-grid{grid-template-columns:1fr 1fr;}}
 .cat-cell{background:#fff;padding:30px 26px;min-height:130px;display:flex;flex-direction:column;justify-content:space-between;transition:background .2s ease;cursor:pointer;}
 .cat-cell:hover{background:var(--ivory-2);}
