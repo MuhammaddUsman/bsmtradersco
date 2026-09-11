@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function QuickViewModal({ product, category, onClose }) {
   useEffect(() => {
@@ -26,7 +27,17 @@ export default function QuickViewModal({ product, category, onClose }) {
           <svg viewBox="0 0 24 24" strokeWidth="1.8" strokeLinecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
         </button>
         <div className="qv-media" style={{ background: category.gradient }}>
-          <svg viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">{category.icon}</svg>
+          {product.image ? (
+            <Image
+              src={product.image}
+              alt={product.name}
+              fill
+              sizes="(max-width: 640px) 100vw, 380px"
+              style={{ objectFit: "cover" }}
+            />
+          ) : (
+            <svg viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">{category.icon}</svg>
+          )}
         </div>
         <div className="qv-body">
           <span className="cat-tag">{category.label}</span>

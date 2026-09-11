@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import { categories, products } from "@/data/products";
 import { useWishlist } from "@/lib/wishlist";
@@ -44,7 +45,17 @@ export default function WishlistPage() {
                           <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78l1.06 1.06L12 21l7.78-7.55 1.06-1.06a5.5 5.5 0 0 0 0-7.78Z" />
                         </svg>
                       </button>
-                      <svg viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">{cat.icon}</svg>
+                      {product.image ? (
+                        <Image
+                          src={product.image}
+                          alt={product.name}
+                          fill
+                          sizes="(max-width: 640px) 100vw, 25vw"
+                          style={{ objectFit: "cover" }}
+                        />
+                      ) : (
+                        <svg viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round">{cat.icon}</svg>
+                      )}
                     </div>
                     <div className="product-body">
                       <h3>{product.name}</h3>
